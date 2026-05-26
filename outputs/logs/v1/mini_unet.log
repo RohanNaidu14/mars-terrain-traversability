@@ -1,0 +1,141 @@
+2026-05-25 09:47:47 | INFO     | ========== MINI_UNET NOTEBOOK STARTED ==========
+2026-05-25 09:47:47 | INFO     | Device   : mps
+2026-05-25 09:47:47 | INFO     | Log file : ../outputs/logs/mini_unet.log
+2026-05-25 09:47:48 | INFO     | Loading existing train/val/test split files...
+2026-05-25 09:47:48 | INFO     | Loaded train.txt: 70 pairs
+2026-05-25 09:47:48 | INFO     | Loaded val.txt: 15 pairs
+2026-05-25 09:47:48 | INFO     | Loaded test.txt: 15 pairs
+2026-05-25 09:47:48 | INFO     | Split confirmed — Train: 70, Val: 15, Test: 15
+2026-05-25 09:47:49 | INFO     | MarsTerrainDataset class defined.
+2026-05-25 09:47:50 | INFO     | Train batches : 9 | Val: 15 | Test: 15
+2026-05-25 09:47:52 | INFO     | Model           : Mini U-Net
+2026-05-25 09:47:52 | INFO     | Parameters      : 7,849,700
+2026-05-25 09:47:52 | INFO     | Model size      : 29.94 MB
+2026-05-25 09:47:52 | INFO     | Device          : mps
+2026-05-25 09:47:54 | INFO     | Computing class weights from training masks...
+2026-05-25 09:47:54 | INFO     | Class pixel counts : [18107523  7550767 10222175   205063]
+2026-05-25 09:47:54 | INFO     | Class weights      : [0.0428 0.1026 0.0758 3.7788]
+2026-05-25 09:47:54 | INFO     | Loss: Weighted CrossEntropyLoss + DiceLoss (ignore_index=255)
+2026-05-25 09:47:55 | INFO     | Task 1 metrics function defined.
+2026-05-25 09:47:56 | INFO     | Task 2 metrics function defined.
+2026-05-25 09:47:58 | INFO     | Training started — 50 epochs, lr=0.001, batch=8
+2026-05-25 09:48:12 | INFO     | Epoch 001/50 | Train: 2.2349 | Val: 2.1392 | mIoU: 0.0986
+2026-05-25 09:48:13 | INFO     |   ✓ Best model saved (mIoU=0.0986)
+2026-05-25 09:48:17 | INFO     | Epoch 002/50 | Train: 2.1075 | Val: 2.4742 | mIoU: 0.1178
+2026-05-25 09:48:17 | INFO     |   ✓ Best model saved (mIoU=0.1178)
+2026-05-25 09:48:22 | INFO     | Epoch 003/50 | Train: 2.0343 | Val: 4.3373 | mIoU: 0.0986
+2026-05-25 09:48:27 | INFO     | Epoch 004/50 | Train: 1.9698 | Val: 3.6257 | mIoU: 0.0986
+2026-05-25 09:48:31 | INFO     | Epoch 005/50 | Train: 1.9576 | Val: 2.5295 | mIoU: 0.0986
+2026-05-25 09:48:36 | INFO     | Epoch 006/50 | Train: 1.8413 | Val: 1.9570 | mIoU: 0.1408
+2026-05-25 09:48:36 | INFO     |   ✓ Best model saved (mIoU=0.1408)
+2026-05-25 09:48:40 | INFO     | Epoch 007/50 | Train: 1.9750 | Val: 1.7208 | mIoU: 0.1600
+2026-05-25 09:48:41 | INFO     |   ✓ Best model saved (mIoU=0.1600)
+2026-05-25 09:48:45 | INFO     | Epoch 008/50 | Train: 1.8784 | Val: 1.6449 | mIoU: 0.1831
+2026-05-25 09:48:45 | INFO     |   ✓ Best model saved (mIoU=0.1831)
+2026-05-25 09:48:50 | INFO     | Epoch 009/50 | Train: 1.8490 | Val: 1.6663 | mIoU: 0.2002
+2026-05-25 09:48:50 | INFO     |   ✓ Best model saved (mIoU=0.2002)
+2026-05-25 09:48:54 | INFO     | Epoch 010/50 | Train: 1.6656 | Val: 2.3021 | mIoU: 0.0762
+2026-05-25 09:48:59 | INFO     | Epoch 011/50 | Train: 1.8553 | Val: 1.6345 | mIoU: 0.2051
+2026-05-25 09:48:59 | INFO     |   ✓ Best model saved (mIoU=0.2051)
+2026-05-25 09:49:04 | INFO     | Epoch 012/50 | Train: 1.8622 | Val: 2.1378 | mIoU: 0.1152
+2026-05-25 09:49:08 | INFO     | Epoch 013/50 | Train: 1.8425 | Val: 1.7523 | mIoU: 0.1818
+2026-05-25 09:49:13 | INFO     | Epoch 014/50 | Train: 1.8063 | Val: 1.8163 | mIoU: 0.1556
+2026-05-25 09:49:18 | INFO     | Epoch 015/50 | Train: 1.8431 | Val: 1.7023 | mIoU: 0.1851
+2026-05-25 09:49:23 | INFO     | Epoch 016/50 | Train: 1.7571 | Val: 1.5934 | mIoU: 0.1990
+2026-05-25 09:49:28 | INFO     | Epoch 017/50 | Train: 1.7868 | Val: 1.8556 | mIoU: 0.1271
+2026-05-25 09:49:32 | INFO     | Epoch 018/50 | Train: 1.7847 | Val: 1.8977 | mIoU: 0.1369
+2026-05-25 09:49:37 | INFO     | Epoch 019/50 | Train: 1.7779 | Val: 2.1573 | mIoU: 0.1183
+2026-05-25 09:49:41 | INFO     | Epoch 020/50 | Train: 1.7808 | Val: 1.6201 | mIoU: 0.1937
+2026-05-25 09:49:46 | INFO     | Epoch 021/50 | Train: 1.7253 | Val: 1.5948 | mIoU: 0.2137
+2026-05-25 09:49:46 | INFO     |   ✓ Best model saved (mIoU=0.2137)
+2026-05-25 09:49:51 | INFO     | Epoch 022/50 | Train: 1.5728 | Val: 1.5951 | mIoU: 0.2163
+2026-05-25 09:49:51 | INFO     |   ✓ Best model saved (mIoU=0.2163)
+2026-05-25 09:49:55 | INFO     | Epoch 023/50 | Train: 1.8075 | Val: 1.6969 | mIoU: 0.1914
+2026-05-25 09:50:00 | INFO     | Epoch 024/50 | Train: 1.6485 | Val: 1.7955 | mIoU: 0.1881
+2026-05-25 09:50:05 | INFO     | Epoch 025/50 | Train: 1.6174 | Val: 1.5949 | mIoU: 0.2200
+2026-05-25 09:50:05 | INFO     |   ✓ Best model saved (mIoU=0.2200)
+2026-05-25 09:50:10 | INFO     | Epoch 026/50 | Train: 1.7433 | Val: 2.1024 | mIoU: 0.1314
+2026-05-25 09:50:14 | INFO     | Epoch 027/50 | Train: 1.7405 | Val: 1.7698 | mIoU: 0.1707
+2026-05-25 09:50:19 | INFO     | Epoch 028/50 | Train: 1.6486 | Val: 1.4928 | mIoU: 0.2348
+2026-05-25 09:50:19 | INFO     |   ✓ Best model saved (mIoU=0.2348)
+2026-05-25 09:50:24 | INFO     | Epoch 029/50 | Train: 1.6007 | Val: 1.6567 | mIoU: 0.1963
+2026-05-25 09:50:28 | INFO     | Epoch 030/50 | Train: 1.5594 | Val: 2.2162 | mIoU: 0.1341
+2026-05-25 09:50:33 | INFO     | Epoch 031/50 | Train: 1.6023 | Val: 1.7091 | mIoU: 0.1911
+2026-05-25 09:50:38 | INFO     | Epoch 032/50 | Train: 1.4598 | Val: 1.3043 | mIoU: 0.2854
+2026-05-25 09:50:38 | INFO     |   ✓ Best model saved (mIoU=0.2854)
+2026-05-25 09:50:43 | INFO     | Epoch 033/50 | Train: 1.5015 | Val: 1.5563 | mIoU: 0.2367
+2026-05-25 09:50:47 | INFO     | Epoch 034/50 | Train: 1.5579 | Val: 1.5456 | mIoU: 0.2431
+2026-05-25 09:50:52 | INFO     | Epoch 035/50 | Train: 1.5115 | Val: 1.9647 | mIoU: 0.1605
+2026-05-25 09:50:57 | INFO     | Epoch 036/50 | Train: 1.6021 | Val: 1.4955 | mIoU: 0.2308
+2026-05-25 09:51:01 | INFO     | Epoch 037/50 | Train: 1.5531 | Val: 2.0784 | mIoU: 0.1338
+2026-05-25 09:51:06 | INFO     | Epoch 038/50 | Train: 1.4378 | Val: 1.5633 | mIoU: 0.2181
+2026-05-25 09:51:11 | INFO     | Epoch 039/50 | Train: 1.4533 | Val: 1.5371 | mIoU: 0.2133
+2026-05-25 09:51:16 | INFO     | Epoch 040/50 | Train: 1.4985 | Val: 1.6805 | mIoU: 0.1984
+2026-05-25 09:51:20 | INFO     | Epoch 041/50 | Train: 1.4799 | Val: 1.4153 | mIoU: 0.2431
+2026-05-25 09:51:26 | INFO     | Epoch 042/50 | Train: 1.2518 | Val: 1.5148 | mIoU: 0.2399
+2026-05-25 09:51:30 | INFO     | Epoch 043/50 | Train: 1.3417 | Val: 1.3558 | mIoU: 0.2516
+2026-05-25 09:51:35 | INFO     | Epoch 044/50 | Train: 1.3054 | Val: 1.7677 | mIoU: 0.1875
+2026-05-25 09:51:40 | INFO     | Epoch 045/50 | Train: 1.3289 | Val: 1.5373 | mIoU: 0.2289
+2026-05-25 09:51:45 | INFO     | Epoch 046/50 | Train: 1.3150 | Val: 1.5644 | mIoU: 0.2225
+2026-05-25 09:51:50 | INFO     | Epoch 047/50 | Train: 1.2942 | Val: 1.6222 | mIoU: 0.2227
+2026-05-25 09:51:55 | INFO     | Epoch 048/50 | Train: 1.1647 | Val: 1.5324 | mIoU: 0.2278
+2026-05-25 09:52:00 | INFO     | Epoch 049/50 | Train: 1.3869 | Val: 1.4329 | mIoU: 0.2374
+2026-05-25 09:52:04 | INFO     | Epoch 050/50 | Train: 1.3038 | Val: 1.6227 | mIoU: 0.2213
+2026-05-25 09:52:04 | INFO     | Training done. Best epoch: 32, Best mIoU: 0.2854
+2026-05-25 09:52:05 | INFO     | Loading best model weights for evaluation...
+2026-05-25 09:52:05 | INFO     | Task 1 evaluation started...
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_398561822EDR_F0030004NCAM00400M1 | mIoU=0.2047 | Dice=0.2251 | 15.4ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_407975674EDR_F0050432NCAM07814M1 | mIoU=0.0000 | Dice=0.0000 | 13.7ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_402117478EDR_F0043200NCAM00439M1 | mIoU=0.2352 | Dice=0.3188 | 14.3ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_398920052EDR_F0030078NCAM00303M1 | mIoU=0.1366 | Dice=0.1767 | 25.1ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_408145785EDR_F0050624NCAM00454M1 | mIoU=0.1815 | Dice=0.2662 | 12.9ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_408145730EDR_F0050624NCAM00454M1 | mIoU=0.2647 | Dice=0.3411 | 13.7ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_398920451EDR_F0030078NCAM00304M1 | mIoU=0.2020 | Dice=0.2234 | 13.9ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_403977615EDR_F0050104NCAM00107M1 | mIoU=0.4073 | Dice=0.4486 | 12.0ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_401855285EDR_F0042778NCAM00434M1 | mIoU=0.2347 | Dice=0.2623 | 12.1ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_402648966EDR_F0050000NCAM00321M1 | mIoU=0.1456 | Dice=0.1840 | 13.6ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_406647820EDR_F0050388NCAM07754M1 | mIoU=0.5000 | Dice=0.5000 | 13.5ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_408145754EDR_F0050624NCAM00454M1 | mIoU=0.2484 | Dice=0.3551 | 12.9ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_403441127EDR_F0050104NCAM00326M1 | mIoU=0.2498 | Dice=0.2499 | 14.6ms
+2026-05-25 09:52:05 | INFO     | [Task1] NLA_398919784EDR_F0030078NCAM00301M1 | mIoU=0.0998 | Dice=0.1426 | 13.9ms
+2026-05-25 09:52:06 | INFO     | [Task1] NLA_402816231EDR_F0050104NCAM00450M1 | mIoU=0.2430 | Dice=0.2465 | 14.5ms
+2026-05-25 09:52:06 | INFO     | Task 1 evaluation done — 15 images.
+2026-05-25 09:52:09 | INFO     | Loading best model weights for evaluation...
+2026-05-25 09:52:09 | INFO     | Task 1 evaluation started...
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_398561822EDR_F0030004NCAM00400M1 | mIoU=0.2047 | Dice=0.2251 | 40.0ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_407975674EDR_F0050432NCAM07814M1 | mIoU=0.0000 | Dice=0.0000 | 21.8ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_402117478EDR_F0043200NCAM00439M1 | mIoU=0.2352 | Dice=0.3188 | 20.8ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_398920052EDR_F0030078NCAM00303M1 | mIoU=0.1366 | Dice=0.1767 | 20.1ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_408145785EDR_F0050624NCAM00454M1 | mIoU=0.1815 | Dice=0.2662 | 19.5ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_408145730EDR_F0050624NCAM00454M1 | mIoU=0.2647 | Dice=0.3411 | 19.8ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_398920451EDR_F0030078NCAM00304M1 | mIoU=0.2020 | Dice=0.2234 | 17.5ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_403977615EDR_F0050104NCAM00107M1 | mIoU=0.4073 | Dice=0.4486 | 13.4ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_401855285EDR_F0042778NCAM00434M1 | mIoU=0.2347 | Dice=0.2623 | 12.6ms
+2026-05-25 09:52:09 | INFO     | [Task1] NLA_402648966EDR_F0050000NCAM00321M1 | mIoU=0.1456 | Dice=0.1840 | 12.9ms
+2026-05-25 09:52:10 | INFO     | [Task1] NLA_406647820EDR_F0050388NCAM07754M1 | mIoU=0.5000 | Dice=0.5000 | 17.8ms
+2026-05-25 09:52:10 | INFO     | [Task1] NLA_408145754EDR_F0050624NCAM00454M1 | mIoU=0.2484 | Dice=0.3551 | 15.7ms
+2026-05-25 09:52:10 | INFO     | [Task1] NLA_403441127EDR_F0050104NCAM00326M1 | mIoU=0.2498 | Dice=0.2499 | 12.0ms
+2026-05-25 09:52:10 | INFO     | [Task1] NLA_398919784EDR_F0030078NCAM00301M1 | mIoU=0.0998 | Dice=0.1426 | 12.1ms
+2026-05-25 09:52:10 | INFO     | [Task1] NLA_402816231EDR_F0050104NCAM00450M1 | mIoU=0.2430 | Dice=0.2465 | 14.4ms
+2026-05-25 09:52:10 | INFO     | Task 1 evaluation done — 15 images.
+2026-05-25 09:52:11 | INFO     | Task 1 masks saved: ../outputs/predictions_task1/mini_unet
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_398561822EDR_F0030004NCAM00400M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_407975674EDR_F0050432NCAM07814M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_402117478EDR_F0043200NCAM00439M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_398920052EDR_F0030078NCAM00303M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_408145785EDR_F0050624NCAM00454M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_408145730EDR_F0050624NCAM00454M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_398920451EDR_F0030078NCAM00304M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_403977615EDR_F0050104NCAM00107M1 | Unsafe Recall=0.7991 | Hazard FNR=0.2009
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_401855285EDR_F0042778NCAM00434M1 | Unsafe Recall=0.9770 | Hazard FNR=0.0230
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_402648966EDR_F0050000NCAM00321M1 | Unsafe Recall=0.5950 | Hazard FNR=0.4050
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_406647820EDR_F0050388NCAM07754M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_408145754EDR_F0050624NCAM00454M1 | Unsafe Recall=1.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_403441127EDR_F0050104NCAM00326M1 | Unsafe Recall=0.9993 | Hazard FNR=0.0007
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_398919784EDR_F0030078NCAM00301M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-25 09:52:13 | INFO     | [Task2] NLA_402816231EDR_F0050104NCAM00450M1 | Unsafe Recall=0.9722 | Hazard FNR=0.0278
+2026-05-25 09:52:15 | INFO     | Task 2 traversability maps saved: ../outputs/traversability_task2/mini_unet
+2026-05-25 09:52:18 | INFO     | Excel saved: ../outputs/excel_results/mini_unet_results.xlsx
+2026-05-25 09:52:19 | INFO     | Saving visual comparison images...
+2026-05-25 09:52:24 | INFO     | Visuals saved: ../outputs/visual_results/mini_unet
+2026-05-25 09:52:26 | INFO     | ========== MINI U-NET NOTEBOOK COMPLETED SUCCESSFULLY ==========
