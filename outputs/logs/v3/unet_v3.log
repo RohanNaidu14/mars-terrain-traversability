@@ -1,0 +1,160 @@
+2026-05-31 11:15:43 | INFO     | ========== UNET_V3 NOTEBOOK STARTED ==========
+2026-05-31 11:15:43 | INFO     | Device : mps
+2026-05-31 11:15:43 | INFO     | Log file: ../../outputs/logs/v3/unet_v3.log
+2026-05-31 11:15:45 | INFO     | Checking dataset paths...
+2026-05-31 11:15:45 | INFO     | Dataset paths confirmed.
+2026-05-31 11:15:45 | INFO     | Removed old split file: train.txt
+2026-05-31 11:15:45 | INFO     | Removed old split file: val.txt
+2026-05-31 11:15:45 | INFO     | Removed old split file: test.txt
+2026-05-31 11:15:45 | INFO     | Scanning dataset for class-diverse image-mask pairs...
+2026-05-31 11:15:45 | INFO     | Total masks available: 16064
+2026-05-31 11:15:49 | INFO     |   Scanned 500 masks... rare=159, bedrock=12, soil=329
+2026-05-31 11:15:52 | INFO     |   Scanned 1000 masks... rare=274, bedrock=360, soil=366
+2026-05-31 11:15:56 | INFO     |   Scanned 1500 masks... rare=383, bedrock=548, soil=569
+2026-05-31 11:15:59 | INFO     |   Scanned 2000 masks... rare=482, bedrock=817, soil=701
+2026-05-31 11:16:02 | INFO     |   Scanned 2500 masks... rare=539, bedrock=859, soil=1102
+2026-05-31 11:16:06 | INFO     |   Scanned 3000 masks... rare=622, bedrock=943, soil=1435
+2026-05-31 11:16:10 | INFO     |   Scanned 3500 masks... rare=761, bedrock=960, soil=1779
+2026-05-31 11:16:14 | INFO     |   Scanned 4000 masks... rare=843, bedrock=989, soil=2168
+2026-05-31 11:16:16 | INFO     | Scan complete — rare class: 1000, bedrock: 1050, soil-only: 2254
+2026-05-31 11:16:16 | INFO     | Final diverse selection: 1000 pairs (rare=500, bedrock=250, soil=250)
+2026-05-31 11:16:16 | ERROR    | Dataset loading failed: name 'create_split_files' is not defined
+2026-05-31 11:18:41 | INFO     | Checking dataset paths...
+2026-05-31 11:18:41 | INFO     | Dataset paths confirmed.
+2026-05-31 11:18:41 | INFO     | Scanning dataset for class-diverse image-mask pairs...
+2026-05-31 11:18:41 | INFO     | Total masks available: 16064
+2026-05-31 11:18:44 | INFO     |   Scanned 500 masks... rare=159, bedrock=12, soil=329
+2026-05-31 11:18:48 | INFO     |   Scanned 1000 masks... rare=274, bedrock=360, soil=366
+2026-05-31 11:18:51 | INFO     |   Scanned 1500 masks... rare=383, bedrock=548, soil=569
+2026-05-31 11:18:54 | INFO     |   Scanned 2000 masks... rare=482, bedrock=817, soil=701
+2026-05-31 11:18:57 | INFO     |   Scanned 2500 masks... rare=539, bedrock=859, soil=1102
+2026-05-31 11:19:01 | INFO     |   Scanned 3000 masks... rare=622, bedrock=943, soil=1435
+2026-05-31 11:19:04 | INFO     |   Scanned 3500 masks... rare=761, bedrock=960, soil=1779
+2026-05-31 11:19:07 | INFO     |   Scanned 4000 masks... rare=843, bedrock=989, soil=2168
+2026-05-31 11:19:09 | INFO     | Scan complete — rare class: 1000, bedrock: 1050, soil-only: 2254
+2026-05-31 11:19:09 | INFO     | Final diverse selection: 1000 pairs (rare=500, bedrock=250, soil=250)
+2026-05-31 11:19:09 | INFO     | Train: 700 | Val: 150 | Test: 15
+2026-05-31 11:19:09 | INFO     | Split confirmed — Train: 700, Val: 150, Test: 15
+2026-05-31 11:19:12 | INFO     | MarsTerrainDataset class defined successfully.
+2026-05-31 11:19:14 | INFO     | Augmentation function defined.
+2026-05-31 11:19:16 | INFO     | Building datasets and dataloaders...
+2026-05-31 11:19:16 | INFO     | Train batches : 175
+2026-05-31 11:19:16 | INFO     | Val samples   : 150
+2026-05-31 11:19:16 | INFO     | Test samples  : 15
+2026-05-31 11:19:16 | INFO     | Image preprocessing completed.
+2026-05-31 11:19:16 | INFO     | Augmentation applied to training data.
+2026-05-31 11:19:17 | INFO     | Model created   : U-Net
+2026-05-31 11:19:17 | INFO     | Parameters      : 31,385,028
+2026-05-31 11:19:17 | INFO     | Model size      : 119.72 MB
+2026-05-31 11:19:17 | INFO     | Device          : mps
+2026-05-31 11:19:21 | INFO     | Computing class weights from training masks...
+2026-05-31 11:19:26 | INFO     | Class pixel counts : [212023852 136592175  46051287   7118143]
+2026-05-31 11:19:26 | INFO     | Class weights      : [0.1083 0.1681 0.4985 3.2251]
+2026-05-31 11:19:26 | INFO     | Loss function ready: Weighted CrossEntropyLoss + DiceLoss
+2026-05-31 11:19:27 | INFO     | Task 1 metrics function defined.
+2026-05-31 11:19:29 | INFO     | Task 2 metrics function defined.
+2026-05-31 11:19:34 | INFO     | Training started — 50 epochs, lr=0.001
+2026-05-31 11:21:37 | INFO     | Epoch 001/50 | Train Loss: 1.9792 | Val Loss: 2.1382 | Val mIoU: 0.1137
+2026-05-31 11:21:38 | INFO     | Best model saved at epoch 1 (mIoU=0.1137)
+2026-05-31 11:23:35 | INFO     | Epoch 002/50 | Train Loss: 1.8438 | Val Loss: 1.7851 | Val mIoU: 0.1791
+2026-05-31 11:23:36 | INFO     | Best model saved at epoch 2 (mIoU=0.1791)
+2026-05-31 11:25:31 | INFO     | Epoch 003/50 | Train Loss: 1.7660 | Val Loss: 2.1033 | Val mIoU: 0.1301
+2026-05-31 11:27:28 | INFO     | Epoch 004/50 | Train Loss: 1.7169 | Val Loss: 1.8071 | Val mIoU: 0.1816
+2026-05-31 11:27:28 | INFO     | Best model saved at epoch 4 (mIoU=0.1816)
+2026-05-31 11:29:24 | INFO     | Epoch 005/50 | Train Loss: 1.7140 | Val Loss: 1.8097 | Val mIoU: 0.1946
+2026-05-31 11:29:24 | INFO     | Best model saved at epoch 5 (mIoU=0.1946)
+2026-05-31 11:35:59 | INFO     | Epoch 006/50 | Train Loss: 1.6514 | Val Loss: 1.7311 | Val mIoU: 0.1936
+2026-05-31 11:37:58 | INFO     | Epoch 007/50 | Train Loss: 1.5685 | Val Loss: 1.8185 | Val mIoU: 0.1818
+2026-05-31 11:39:54 | INFO     | Epoch 008/50 | Train Loss: 1.5503 | Val Loss: 1.7451 | Val mIoU: 0.1744
+2026-05-31 11:41:50 | INFO     | Epoch 009/50 | Train Loss: 1.5429 | Val Loss: 2.7559 | Val mIoU: 0.0707
+2026-05-31 11:43:46 | INFO     | Epoch 010/50 | Train Loss: 1.5662 | Val Loss: 1.8305 | Val mIoU: 0.1709
+2026-05-31 11:45:41 | INFO     | Epoch 011/50 | Train Loss: 1.5022 | Val Loss: 1.7262 | Val mIoU: 0.2015
+2026-05-31 11:45:41 | INFO     | Best model saved at epoch 11 (mIoU=0.2015)
+2026-05-31 11:47:37 | INFO     | Epoch 012/50 | Train Loss: 1.4786 | Val Loss: 1.5655 | Val mIoU: 0.2296
+2026-05-31 11:47:37 | INFO     | Best model saved at epoch 12 (mIoU=0.2296)
+2026-05-31 11:49:33 | INFO     | Epoch 013/50 | Train Loss: 1.4736 | Val Loss: 1.4881 | Val mIoU: 0.2270
+2026-05-31 11:51:31 | INFO     | Epoch 014/50 | Train Loss: 1.4551 | Val Loss: 1.6221 | Val mIoU: 0.2112
+2026-05-31 11:53:28 | INFO     | Epoch 015/50 | Train Loss: 1.4095 | Val Loss: 1.4388 | Val mIoU: 0.2386
+2026-05-31 11:53:28 | INFO     | Best model saved at epoch 15 (mIoU=0.2386)
+2026-05-31 11:55:23 | INFO     | Epoch 016/50 | Train Loss: 1.4351 | Val Loss: 1.5261 | Val mIoU: 0.2293
+2026-05-31 11:57:18 | INFO     | Epoch 017/50 | Train Loss: 1.3608 | Val Loss: 1.5656 | Val mIoU: 0.2186
+2026-05-31 12:12:46 | INFO     | Epoch 018/50 | Train Loss: 1.3569 | Val Loss: 2.1867 | Val mIoU: 0.1406
+2026-05-31 12:14:46 | INFO     | Epoch 019/50 | Train Loss: 1.3702 | Val Loss: 1.4195 | Val mIoU: 0.2430
+2026-05-31 12:14:46 | INFO     | Best model saved at epoch 19 (mIoU=0.2430)
+2026-05-31 12:16:43 | INFO     | Epoch 020/50 | Train Loss: 1.3929 | Val Loss: 1.6309 | Val mIoU: 0.2058
+2026-05-31 12:18:41 | INFO     | Epoch 021/50 | Train Loss: 1.3265 | Val Loss: 1.5015 | Val mIoU: 0.2257
+2026-05-31 12:20:35 | INFO     | Epoch 022/50 | Train Loss: 1.3518 | Val Loss: 1.4841 | Val mIoU: 0.2189
+2026-05-31 12:22:30 | INFO     | Epoch 023/50 | Train Loss: 1.2996 | Val Loss: 1.3799 | Val mIoU: 0.2495
+2026-05-31 12:22:30 | INFO     | Best model saved at epoch 23 (mIoU=0.2495)
+2026-05-31 12:40:34 | INFO     | Epoch 024/50 | Train Loss: 1.3011 | Val Loss: 1.3417 | Val mIoU: 0.2523
+2026-05-31 12:40:34 | INFO     | Best model saved at epoch 24 (mIoU=0.2523)
+2026-05-31 12:42:33 | INFO     | Epoch 025/50 | Train Loss: 1.2639 | Val Loss: 1.4083 | Val mIoU: 0.2384
+2026-05-31 12:44:29 | INFO     | Epoch 026/50 | Train Loss: 1.2820 | Val Loss: 1.6027 | Val mIoU: 0.2210
+2026-05-31 12:46:24 | INFO     | Epoch 027/50 | Train Loss: 1.2037 | Val Loss: 2.0783 | Val mIoU: 0.1571
+2026-05-31 12:48:21 | INFO     | Epoch 028/50 | Train Loss: 1.2417 | Val Loss: 1.6004 | Val mIoU: 0.2084
+2026-05-31 12:50:16 | INFO     | Epoch 029/50 | Train Loss: 1.2625 | Val Loss: 1.5337 | Val mIoU: 0.2132
+2026-05-31 12:52:11 | INFO     | Epoch 030/50 | Train Loss: 1.2261 | Val Loss: 1.4467 | Val mIoU: 0.2487
+2026-05-31 12:54:05 | INFO     | Epoch 031/50 | Train Loss: 1.1268 | Val Loss: 1.4696 | Val mIoU: 0.2267
+2026-05-31 12:56:00 | INFO     | Epoch 032/50 | Train Loss: 1.1354 | Val Loss: 1.6058 | Val mIoU: 0.1995
+2026-05-31 12:57:54 | INFO     | Epoch 033/50 | Train Loss: 1.0815 | Val Loss: 1.7826 | Val mIoU: 0.2075
+2026-05-31 12:59:49 | INFO     | Epoch 034/50 | Train Loss: 1.0990 | Val Loss: 1.3164 | Val mIoU: 0.2514
+2026-05-31 13:08:01 | INFO     | Epoch 035/50 | Train Loss: 1.0519 | Val Loss: 1.3410 | Val mIoU: 0.2453
+2026-05-31 13:10:07 | INFO     | Epoch 036/50 | Train Loss: 1.0231 | Val Loss: 1.4708 | Val mIoU: 0.2401
+2026-05-31 13:12:01 | INFO     | Epoch 037/50 | Train Loss: 1.0114 | Val Loss: 1.5670 | Val mIoU: 0.2201
+2026-05-31 13:13:56 | INFO     | Epoch 038/50 | Train Loss: 0.9819 | Val Loss: 1.5235 | Val mIoU: 0.2326
+2026-05-31 13:15:50 | INFO     | Epoch 039/50 | Train Loss: 1.0171 | Val Loss: 1.5627 | Val mIoU: 0.2237
+2026-05-31 13:17:45 | INFO     | Epoch 040/50 | Train Loss: 0.9682 | Val Loss: 1.3018 | Val mIoU: 0.2506
+2026-05-31 13:20:11 | INFO     | Epoch 041/50 | Train Loss: 0.9170 | Val Loss: 1.3385 | Val mIoU: 0.2566
+2026-05-31 13:20:11 | INFO     | Best model saved at epoch 41 (mIoU=0.2566)
+2026-05-31 13:37:56 | INFO     | Epoch 042/50 | Train Loss: 0.9612 | Val Loss: 1.3128 | Val mIoU: 0.2524
+2026-05-31 13:55:46 | INFO     | Epoch 043/50 | Train Loss: 0.9598 | Val Loss: 1.4304 | Val mIoU: 0.2346
+2026-05-31 14:11:49 | INFO     | Epoch 044/50 | Train Loss: 0.9323 | Val Loss: 1.2421 | Val mIoU: 0.2691
+2026-05-31 14:11:49 | INFO     | Best model saved at epoch 44 (mIoU=0.2691)
+2026-05-31 14:13:43 | INFO     | Epoch 045/50 | Train Loss: 0.9233 | Val Loss: 1.5033 | Val mIoU: 0.2332
+2026-05-31 14:15:37 | INFO     | Epoch 046/50 | Train Loss: 0.9306 | Val Loss: 1.4862 | Val mIoU: 0.2351
+2026-05-31 14:17:32 | INFO     | Epoch 047/50 | Train Loss: 0.9178 | Val Loss: 1.3574 | Val mIoU: 0.2550
+2026-05-31 14:19:27 | INFO     | Epoch 048/50 | Train Loss: 0.9053 | Val Loss: 1.4149 | Val mIoU: 0.2425
+2026-05-31 14:21:23 | INFO     | Epoch 049/50 | Train Loss: 0.8880 | Val Loss: 1.5877 | Val mIoU: 0.2293
+2026-05-31 14:33:29 | INFO     | Epoch 050/50 | Train Loss: 0.8669 | Val Loss: 1.6863 | Val mIoU: 0.2463
+2026-05-31 14:33:29 | INFO     | Training completed. Best epoch: 44, Best mIoU: 0.2691
+2026-05-31 14:33:36 | INFO     | Loading best model weights for Task 1 evaluation...
+2026-05-31 14:33:36 | INFO     | Task 1 evaluation started...
+2026-05-31 14:33:36 | INFO     | [Task1] NLB_429284450EDR_F0120000NCAM00267M1 | mIoU=0.2486 | Dice=0.2493 | 52.6ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_401936894EDR_F0042956NCAM00435M1 | mIoU=0.2471 | Dice=0.2485 | 32.5ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_402815600EDR_F0050104NCAM00452M1 | mIoU=0.2323 | Dice=0.2408 | 33.2ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLB_417301160EDR_F0060000NCAM07754M1 | mIoU=0.2054 | Dice=0.2255 | 32.8ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_602488056EDR_F0732676NCAM00270M1 | mIoU=0.2500 | Dice=0.2500 | 33.1ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_401137937EDR_F0041238NCAM00425M1 | mIoU=0.2481 | Dice=0.2490 | 32.9ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLB_445615972EDR_F0261274NCAM00266M1 | mIoU=0.2499 | Dice=0.2500 | 33.6ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_401317063EDR_F0042002NCAM00431M1 | mIoU=0.4406 | Dice=0.4684 | 33.1ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_405747258EDR_F0050104NCAM00324M1 | mIoU=0.4239 | Dice=0.4579 | 33.3ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLB_444991236EDR_F0260366NCAM00263M1 | mIoU=0.2500 | Dice=0.2500 | 33.7ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLA_602485314EDR_F0732550NCAM00203M1 | mIoU=0.1187 | Dice=0.1613 | 33.4ms
+2026-05-31 14:33:36 | INFO     | [Task1] NLB_425638714EDR_F0060764NCAM00382M1 | mIoU=0.2058 | Dice=0.2258 | 33.0ms
+2026-05-31 14:33:37 | INFO     | [Task1] NLA_401317028EDR_F0042002NCAM00430M1 | mIoU=0.2500 | Dice=0.2500 | 33.2ms
+2026-05-31 14:33:37 | INFO     | [Task1] NLA_401937086EDR_F0042956NCAM00435M1 | mIoU=0.2455 | Dice=0.2478 | 32.5ms
+2026-05-31 14:33:37 | INFO     | [Task1] NLB_451296365EDR_F0311256NCAM00273M1 | mIoU=0.3848 | Dice=0.4737 | 33.1ms
+2026-05-31 14:33:37 | INFO     | Task 1 evaluation completed for 15 images.
+2026-05-31 14:33:38 | INFO     | Task 1 predicted masks saved to: ../../outputs/predictions_task1/v3/unet_v3
+2026-05-31 14:33:40 | INFO     | Task 2 safe/unsafe conversion started...
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_429284450EDR_F0120000NCAM00267M1 | Unsafe Recall=0.0000 | Hazard FNR=1.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_401936894EDR_F0042956NCAM00435M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_402815600EDR_F0050104NCAM00452M1 | Unsafe Recall=0.9302 | Hazard FNR=0.0698
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_417301160EDR_F0060000NCAM07754M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_602488056EDR_F0732676NCAM00270M1 | Unsafe Recall=1.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_401137937EDR_F0041238NCAM00425M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_445615972EDR_F0261274NCAM00266M1 | Unsafe Recall=0.0000 | Hazard FNR=1.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_401317063EDR_F0042002NCAM00431M1 | Unsafe Recall=0.9508 | Hazard FNR=0.0492
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_405747258EDR_F0050104NCAM00324M1 | Unsafe Recall=0.9940 | Hazard FNR=0.0060
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_444991236EDR_F0260366NCAM00263M1 | Unsafe Recall=1.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_602485314EDR_F0732550NCAM00203M1 | Unsafe Recall=0.9615 | Hazard FNR=0.0385
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_425638714EDR_F0060764NCAM00382M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_401317028EDR_F0042002NCAM00430M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLA_401937086EDR_F0042956NCAM00435M1 | Unsafe Recall=0.0000 | Hazard FNR=0.0000
+2026-05-31 14:33:40 | INFO     | [Task2] NLB_451296365EDR_F0311256NCAM00273M1 | Unsafe Recall=0.9228 | Hazard FNR=0.0772
+2026-05-31 14:33:40 | INFO     | Task 2 metrics calculated for 15 images.
+2026-05-31 14:33:41 | INFO     | Task 2 traversability maps saved to: ../../outputs/traversability_task2/v3/unet_v3
+2026-05-31 14:33:45 | INFO     | Excel file saved: ../../outputs/excel_results/v3/unet_v3_results.xlsx
+2026-05-31 14:33:46 | INFO     | Saving visual comparison images...
+2026-05-31 14:33:51 | INFO     | Visual results saved to: ../../outputs/visual_results/v3/unet_v3
+2026-05-31 14:33:52 | INFO     | ========== U-NET NOTEBOOK COMPLETED SUCCESSFULLY ==========
