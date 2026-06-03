@@ -15,6 +15,10 @@ The system performs two tasks:
 - **Task 1 — Terrain Segmentation:** Classifies every pixel of a Mars surface image into one of four terrain classes: Soil, Bedrock, Sand, Big Rock
 - **Task 2 — Traversability Mapping:** Converts terrain predictions into a binary Safe/Unsafe map to guide rover path planning
 
+**Total Dataset Size:** 16,064 labelled image-mask pairs available.
+Experiments used 100 (V1), 500 (V2), and 1000 (V3) diverse pairs
+selected from this pool using a class-diversity strategy.
+
 ---
 
 ## Sample Visual Output
@@ -367,7 +371,3 @@ Automatically falls back to CUDA (NVIDIA GPU) or CPU if MPS is unavailable.
 This project is for academic research purposes only.
 
 ---
-
-## GitHub Repository
-
-[https://github.com/RohanNaidu14/mars-terrain-traversability](https://github.com/RohanNaidu14/mars-terrain-traversability)
