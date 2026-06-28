@@ -1,4 +1,4 @@
-# Autonomous Terrain Traversability Analysis for Mars Rovers using Lightweight Semantic Segmentation
+# L Rohan - 1997014 - Autonomous Terrain Traversability Analysis for Mars Rovers using Lightweight Semantic Segmentation
 
 > **MSc Dissertation Project — Liverpool John Moores University (LJMU)**
 > **Programme:** MSc Data Science and Machine Learning
